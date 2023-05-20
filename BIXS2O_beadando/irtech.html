@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta content="text/html">
+    <title>Irányítástechnika</title>
+
+    <style>
+
+        header {
+            display: block;
+        }
+
+        .fejlec{
+            font-size: 18pt;
+            font-family: Helvetica;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .urlap{
+            padding: 20px;
+            font-size: 12pt;
+            
+            background: #acef11;
+            
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #888888;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header id="fejlec" class="fejlec">
+       Irányítástechnikai programrendszerek  
+        <video id="videom" width="300" controls style="float: right;">
+            <source src="video.mp4" type="video/mp4">
+            A böngésződ nem támogatja a HTML videók lejátszását.
+        </video>
+    </header>
+    <a style="font-weight: bold; font-size: x-large;">Tárgy tematika:</a>
+
+    <ol  style="font-size: 16pt;  list-style-type:upper-roman; color:rgb(133, 5, 52);">
+        <li>hét: PLC rendszerek általános felépítése</li>
+        <li> hét: Változók, adattípusok, közös programozási elemek. A létra programozási nyelv
+            bemutatása.</li>
+        <li> hét: A funkció blokk diagram programozási nyelv bemutatása. Az utalsításlistás programozási
+            nyelv bemutatása</li>    
+        <li> hét: A strukturált szöveg programozási nyelv bemutatása</li>
+        <li> hét: A sorrendi folyamatábra programozási nyelv bemutatása.</li>
+        <li> hét: Analóg jelkezelés, aktuátorok, szenzorok, enkóderek</li>
+        <li> hét: Frekvenciaváltós hajtások és szervók működtetése PLC-vel</li>
+        <li> hét: PLC diagnosztika</li>
+        <li> hét: Szakaszos technológiák irányítása</li>
+        <li> hét: Elektropneumatika</li>
+        <li> hét: Ismerkedés az E-plan környezettel</li>
+        <li> hét: Ismerkedés az E-plan környezettel</li>
+        <li> hét: Zárthelyi dolgozat</li>
+        <li> hét: Pótzárthelyi dolgozat</li>
+      
+    </ol>
+
+    <br><br>
+
+    <p>A tantárgy gyakorlati anyagának legfontosabb része a <a style="font-weight: bold; font-size: x-large; color: darkred;"> PLC programozás.</a> Erről muatat be egy részletet a mellékelt videó.</p>
+
+    <section id="tartalom">
+
+        <button style="float: right;" onClick="indit_leallit()">indítás / leállítás</button>
+        <button style="float:right;" onClick="videom.playbackRate=2">gyorsabb</button>
+        <button style="float: right;" onClick="videom.playbackRate=0.5"> lassú</button>
+        <button style="float: right;" onClick="videom.playbackRate=1">normál</button>
+
+        <br><br>
+
+    
+    </section>
+
+    <section id="tartalom" class="urlap">
+        <form id="urlap" name="urlap" action="feldolgozo1.php" method="GET" target="_self">
+
+            Értékelje 1-10-es skálán a tárgyat! &nbsp;<input type="number" name="ertekeles" min="0" max="10" style="width: 300px">
+
+        </form>
+        <br>
+        <input type="submit" value="ELKÜLDÖM" form="urlap" formaction="feldolgozo1.php"
+      formmethod="post" />
+    </section>
+    
+
+
+
+    <script>
+        var videom = document.getElementById('videom');
+
+        function indit_leallit() {
+            if (videom.paused) {
+                videom.play();
+            }
+            else{
+                videom.pause();
+            }
+        }
+    </script>
+
+</body>
+</html>
