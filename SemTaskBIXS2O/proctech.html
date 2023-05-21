@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta content="text/html">
+    <title>Kezdőlap</title>
+
+    <style>
+
+        header {
+            display: block;
+        }
+
+        .fejlec{
+            font-size: 18pt;
+            font-family: Helvetica;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .urlap{
+            padding: 20px;
+            font-size: 12pt;
+            
+            background: #acef11;
+            
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #888888;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header id="fejlec" class="fejlec">
+        Processzortechnika  
+        
+    </header>
+
+    <a style="font-weight: bold; font-size: x-large;">Tárgy tematika:</a>
+
+    <br>
+    <ul style="font-size: 16pt;  list-style-type: circle; color:rgb(133, 5, 52);">
+        <li>1. hét: CPU modell, aritmetika</li>
+        <li>2. hét: Aritmetika, vezérlésátadás</li>
+        <img src="kepek/proc.jpg" height="300" border="0" alt="" style="float: right;">
+        <li>3. hét: ARM utasítások, ASM, C eszközök</li>    
+        <li>4. hét: C projekt felépítése, CMSIS</li>
+        <li>5. hét: Startup modul, linker szkript</li>
+        <li>6. hét: IO függvények</li>
+        <li>7. hét: C-könyvtár, Filerendszer, ADC-DAC</li>
+        <li>8. hét: IO: GPIO, SPI, UART, Timer</li>
+        <li>9. hét: Cache kezelés I</li>
+        <li>10. hét: Cache kezelés II</li>
+        <li>11. hét: Pipeline: hazárdok, out-of-order végrehajtás</li>
+        <li>12. hét: Pipeline: ugrások, előrejelzés.</li>
+        <li>13. hét: Ismétlés</li>
+        <li>14. hét: Ismétlés</li>
+
+        
+        
+    </ul>
+
+    <br><br>
+    
+    <section id="tartalom" class="urlap">
+        <form id="urlap" name="urlap" action="feldolgozo.php" method="GET" target="_self">
+
+            Értékelje 1-10-es skálán a tárgyat! &nbsp;<input type="number" name="ertekeles" min="0" max="10" style="width: 300px">
+
+        </form>
+        <br>
+        <input type="submit" value="ELKÜLDÖM" form="urlap" formaction="feldolgozo.php"
+      formmethod="post" />
+    </section>
+</body>
+</html>
+    
